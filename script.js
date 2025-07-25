@@ -5,12 +5,14 @@ const closeBtn = document.getElementById("close-sidebar");
 const overlay = document.getElementById("overlay");
 
 toggleBtn.addEventListener("click", () => {
-  sidebar.classList.toggle("active");
+  sidebar.classList.add("active");
+  overlay.classList.add("active");
   toggleBtn.style.display = "none";
 });
 
 closeBtn.addEventListener("click", () => {
   sidebar.classList.remove("active");
+  overlay.classList.remove("active");
   toggleBtn.style.display = "block";
 });
 
