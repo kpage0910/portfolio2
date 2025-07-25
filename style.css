@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+
 body{
     font-family: Lato, sans-serif;
     background-color: #ffffff;
@@ -257,6 +268,60 @@ color: rgba(73, 170, 212, 1);;
     display: block;
   }
 }
+
+@media (max-width: 600px) {
+  /* General layout adjustments */
+  .content-wrapper {
+    margin: 0;
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  h1, h2 {
+    font-size: 1.4rem;
+  }
+
+  p, li {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  /* Sidebar fixes (when shown) */
+  .sidebar {
+    width: 100%;
+    height: 100vh;
+  }
+
+  /* Adjust memoji or images */
+  .memoji {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+  }
+
+  /* Fix mobile header layout */
+  .mobile-header {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 10px;
+  }
+
+  /* Fit your name better next to the toggle */
+  .mobile-name {
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70%;
+  }
+}
+
 
 /* Dark overlay (hidden by default) */
 #overlay {
