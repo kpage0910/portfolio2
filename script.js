@@ -22,3 +22,12 @@ overlay.addEventListener("click", () => {
   overlay.classList.remove("active");
   toggleBtn.style.display = "block";
 });
+
+// Close sidebar when a nav link is clicked
+document.querySelectorAll(".sidebar a").forEach(link => {
+  link.addEventListener("click", () => {
+    sidebar.classList.remove("active");
+    overlay.classList.remove("active");
+    toggleBtn.style.display = "block";
+  });
+});

@@ -277,7 +277,7 @@ color: rgba(73, 170, 212, 1);;
     font-size: 14px;
   }
 
-  .row {
+   .row, .layout {
     flex-direction: column;
   }
 
@@ -311,6 +311,10 @@ color: rgba(73, 170, 212, 1);;
     justify-content: flex-start;
     padding: 10px;
   }
+
+  main, section, header {
+    width: 100%;
+   }
 
   /* Fit your name better next to the toggle */
   .mobile-name {
