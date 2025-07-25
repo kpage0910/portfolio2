@@ -17,6 +17,14 @@ body{
     
 }
 
+header{
+    font-size: 18pt;
+}
+
+main{
+    margin-top: -40px;
+}
+
 
 
 h1, h2, h3 {
@@ -28,6 +36,7 @@ h1, h2, h3 {
 }
 
 p {
+    
     font-size: 11pt;
     font-weight: 400;
     line-height: 1.6667;
@@ -186,7 +195,9 @@ color: rgba(73, 170, 212, 1);;
   }
 
   .content-wrapper {
-    
+    margin-left: 60px;
+    padding-left: 20px; /* or whatever small amount you want */
+    padding-right: 20px;
     margin-top: 60px;
   }
 
