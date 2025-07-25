@@ -292,7 +292,7 @@ color: rgba(73, 170, 212, 1);;
 
   /* Sidebar fixes (when shown) */
   .sidebar {
-    width: 100%;
+    width: 70vw;
     height: 100vh;
   }
 
@@ -302,6 +302,7 @@ color: rgba(73, 170, 212, 1);;
     max-width: 300px;
     height: auto;
     display: block;
+    order: 2;
     margin: 20px auto;
   }
 
