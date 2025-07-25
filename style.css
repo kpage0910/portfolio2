@@ -186,6 +186,7 @@ color: rgba(73, 170, 212, 1);;
 
 .mobile-header {
   display: none;
+  width: 25%;
 }
 
 /* On small screens: hide sidebar and show button */
